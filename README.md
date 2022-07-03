@@ -1,2 +1,2 @@
 # daily-learning
-tags of HTML, &amp; CSS 
+tags of HTML & syntax of CSS 
