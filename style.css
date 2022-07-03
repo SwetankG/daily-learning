@@ -70,6 +70,7 @@ p {
   color: blue;
   font-size: 100px;
   line-height: 15px;
+  width: 45px;
 }
 
 .button {
