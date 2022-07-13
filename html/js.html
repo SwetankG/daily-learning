@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            document.getElementById("demo4").innerHTML = 'It changed';
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="demo">to show date</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML= "Date"'>tap on me</button>
+    </div>
+    <div>
+        <p id="demo">to show date</p>
+        <script>document.getElementById("demo").innerHTML = "now show time";</script>
+    </div>
+    <div>
+        <p id="demo1">to change font</p>
+        <button type="button" onclick="document.getElementById('demo1').style.fontSize='20px'">Tap</button>
+    </div>
+
+    <div>
+        <p id="demo2">to hide display text</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'">Tap me</button>
+    </div>
+    <div>
+        <p id="demo3" style="display:none;"> gher</p>
+        <button type="button" onclick="document.getElementById('demo3').style.display='block'">Tap me</button>
+    </div>
+    <div>
+        <p id="demo4">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">change</button>
+    </div>
+    <div>
+        <p id="demo5">You and me</p>
+
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo5").innerHTML = "Now we and family.";
+            }
+        </script>
+    </div>
+    <div>
+        <p id="demo6">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">External js</button>
+        <script src="/js/my-script.js"></script>
+    </div>
+    <hr>
+
+    <!--document.write() should only be used for testing otherwise it overwrite all existing document will delete all existing HTML-->
+    <div>
+        <script>
+            document.write(5 + 6);
+        </script>
+    </div>
+    <div>
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
+
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    </div>
+    <div>
+        <!--the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:-->
+        <script>
+            window.alert(5 + 6);
+        </script>
+        <!--we write    *alert(5 + 6);*-->
+    </div>
+    <hr>
+    <div>
+        <script>
+            console.log("welcome");
+            console.log("8*8");
+        </script>
+    </div>
+    <div>
+        <button onclick="window.print()">Print this page</button>
+    </div>
+
+    <div>
+        <p id="demo7">the sum</p>
+
+        <script>
+            let x, y, z;  // Statement 1
+            x = 5;        // Statement 2
+            y = 6;        // Statement 3
+            z = x + y;    // Statement 4
+            document.getElementById("demo7").innerHTML =
+                "The value of z is " + z + ".";
+
+        </script>
+    </div>
+    <hr>
+    <div>
+        <p id="demo8"></p>
+
+        <script>
+            document.getElementById("demo8").innerHTML = "Hello Dolly.";
+        </script>
+
+    </div>
+    <hr>
+    <div>
+        <p id="demo9"></p>
+
+        <script>
+            let a, b, c;
+            a = 5;
+            b = 6;
+            c = a + b;
+            document.getElementById("demo9").innerHTML = c;
+        </script>
+    </div>
+    <hr>
+    <div>
+        <p id="demo10"></p>
+
+        <script>
+            let a, b, c, d;
+            a = 5; b = 6; c = a + b; d = c + a;
+            document.getElementById("demo10").innerHTML = c;
+        </script>
+    </div>
+    <hr>
+</body>
+
+</html>
