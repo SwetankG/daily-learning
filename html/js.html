@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../js/function.js">
     <script>
-        function myFunction() {
-            document.getElementById("demo4").innerHTML = 'It changed';
-        }
+
     </script>
+
+
 </head>
 
 <body>
-    <div>
+    <p>
+    <h1>my world</h1>
+    </p>
+    <!-- <div>
         <p id="demo">to show date</p>
         <button type="button" onclick='document.getElementById("demo").innerHTML= "Date"'>tap on me</button>
     </div>
@@ -37,7 +41,7 @@
     </div>
     <div>
         <p id="demo4">A Paragraph.</p>
-        <button type="button" onclick="myFunction()">change</button>
+        <button type="button" onclick="myFunction1()">change</button>
     </div>
     <div>
         <p id="demo5">You and me</p>
@@ -57,7 +61,7 @@
     </div>
     <hr>
 
-    <!--document.write() should only be used for testing otherwise it overwrite all existing document will delete all existing HTML-->
+    document.write() should only be used for testing otherwise it overwrite all existing document will delete all existing HTML
     <div>
         <script>
             document.write(5 + 6);
@@ -70,11 +74,11 @@
         <button type="button" onclick="document.write(5 + 6)">Try it</button>
     </div>
     <div>
-        <!--the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:-->
+        the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:
         <script>
             window.alert(5 + 6);
         </script>
-        <!--we write    *alert(5 + 6);*-->
+          we can write   *alert(5 + 6);*
     </div>
     <hr>
     <div>
@@ -114,11 +118,11 @@
         <p id="demo9"></p>
 
         <script>
-            let a, b, c;
-            a = 5;
-            b = 6;
-            c = a + b;
-            document.getElementById("demo9").innerHTML = c;
+            let a1, b1, c1;
+            a1 = 5;
+            b1 = 6;
+            c1 = a1 + b1;
+            document.getElementById("demo9").innerHTML = c1;
         </script>
     </div>
     <hr>
@@ -132,6 +136,132 @@
         </script>
     </div>
     <hr>
+    <div>
+        <p id="demo11"> my script</p>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        let answer1 = "It's alright"; 'it is ell';
+        let answer2 = "He is called 'Johnny'";
+        let answer3 = 'He is called "Johnny"';
+        //we can write string in string in simgle and double quote or any quote within any code
+        document.getElementById("demo").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3; 
+    </script>
+    <br>
+    <div>
+        alert
+        <p id="dem1"></p>
+        <script>
+
+        </script>
+        <script>
+            let text = "We are the so-called \"Vikings\" from the north.";
+            document.getElementById("demo1").innerHTML = text; 
+        </script>
+    </div>
+    <div>
+        <p id="demo2"></p>
+
+        <script>
+            document.getElementById("demo2").innerHTML =
+                "Hello  Dolly!";
+        </script>
+    </div>
+    <hr>
+    <div>
+        <p id="dem3"></p>
+
+        <script>
+            // x is a string
+            let x = "John";
+
+            // y is an object
+            let y = new String("John");
+            // But strings can also be defined as objects with the keyword *new*:
+            document.getElementById("dem3").innerHTML =
+                typeof x + "<br>" + typeof y;
+        </script>
+    </div>
+    <hr>
+    <div>
+
+        <p id="demo4"></p>
+
+        <script>
+            let str = "Apple, Banana, Kiwi";
+           // document.getElementById("demo4").innerHTML = str.slice(15, 19);
+           // document.getElementById("demo4").innerHTML = str.slice(-12, -6);
+           // it count from right side to left side
+           //document.getElementById("demo4").innerHTML = str.slice(-12);
+           //document.getElementById("demo4").innerHTML = str.slice(7);
+           //document.getElementById("demo4").innerHTML = str.substr(7,6);
+           //The substr() method extract a part of a string and returns the extracted parts in a new string:
+           //document.getElementById("demo4").innerHTML = str.substring(7,13);
+           //document.getElementById("demo4").innerHTML = str.substr(-4); //kiwi
+        //we can d0 text.[replace,lower2upper2lower,concat.trim,padding(start-end),charaAt,characodeAt,split("", "," "|")]
+        </script>
+    </div>
+    <div>
+        <p id="demo"></p>
+        <script>
+            /*String search*/
+           // let str = "Please locate where 'locate' occurs!";
+            let text = "Please locate where 'locate' occurs!";
+            
+            document.getElementById("demo").innerHTML = text.includes("occurs");
+            //let str = "Please locate where 'locate' occurs!";
+            //document.getElementById("demo5").innerHTML = str.indexOf("locate");
+            //str.indexof(locate) //we can use str.search(locate) The two methods, indexOf() and search(), are equal?The two methods are NOT equal. These are the differences:The search() method cannot take a second start position argument.The indexOf() method cannot take powerful search values (regular expressions).
+
+            //str.lastindexof()
+            //str.startwith() //text.startsWith("please", 0);
+            //str.endwith() //text.endsWith("occurs", 0);
+            //text.match(/cat/e);
+            //document.getElementById("demo5").innerHTML = text.match(/cat/e);
+            text.include()-->
+
+    <!--<script>
+        /*JS Template Literals
+        use back-ticks (``) rather than the quotes ("") to define a string:
+        Template Literals
+        Template Strings
+        String Templates
+        Back-Tics Syntax
+        //Template literals allows multiline strings:*/
+    /*(let text =
+    `The quick
+    brown fox
+    jumps over
+    the lazy dog`;) //result shows in a line
+
+    //let text = `Welcome ${firstName}, ${lastName}!`;
+    </script>
+
+    </div>
+    <div>
+        <p id="demo5"></p>
+
+        <script>
+        let text = "Please locate where 'locate' occurs!";
+        
+        document.getElementById("demo5").innerHTML = text.match(/cat/e);
+        
+        </script>
+    </div>-->
+    <script>
+        let age = prompt("confirm your age");
+        console.log("age");
+         if (age > 18){
+            console.log("you are allowed");
+         }
+
+         else (age <18){
+            console.log("not allowed");
+         }
+    </script>
 </body>
 
 </html>
