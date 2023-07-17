@@ -1,0 +1,179 @@
+*{
+    background-color: black;
+
+}
+
+/* nav-bar */
+
+.nav  {
+height: 72px;
+width: 100%;
+background-color:#1a2224;
+position: relative;
+width:auto;
+display: flex;
+text-decoration: none;
+color: rgb(255, 255, 255);
+align-items: center;
+justify-content: center;
+font-size:small;
+
+}
+
+.nav  a{
+    text-decoration:none;
+    color: aliceblue;
+    background: #1a2224;
+
+}
+ .nav a :hover{
+    color: #e0476d;
+ }
+
+.nav-logo{
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    justify-content: start;
+    
+
+}
+.logo{
+    background: #1a2224 url(../image/minitv.png);
+    height: 50px;
+    width: 100%;
+    background-size:contain;
+    padding-left: 10px;
+
+}
+
+.nav a img{
+    height:50px;
+    width:100%;
+    padding-top:7px;
+    background: #1a2224;
+}
+ .nav a:hover{
+color: #e0476d;
+}
+/* a:hover {
+    color: #ff0000;
+  } */
+
+.s-icon a img{
+    width:50%;
+}
+.card-wrap{
+    display: flex;
+}
+
+
+.carousel-item img{
+    height: 250px;
+}
+.carousel-indicators{
+    margin-left: 47px;
+    margin-right: 47px;
+    opacity: 0.0;
+    
+}
+
+/* nd card */
+.card-container h3{
+    color: white;
+    margin-top: 4%;
+    margin-left: 1%;
+    /* position: sticky; */
+
+}
+.card-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    position: sticky;
+    background-color: black !important;
+  }
+
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card2 {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(218, 77, 77, 0.1);
+    transition: transform 0.3s;
+  }
+  .card2:hover {
+    transform: scale(1.2);
+  }
+
+  
+  .card-content img{
+    height: 100%;
+    padding: 0px;
+  }
+/* 2nd crd end */
+
+/* footer */
+.row{
+    background-color: #1a2224;
+    /* margin-top: 2%; */
+    
+}
+
+.footer-mini{
+    height: 200px;
+    padding-top: 30px;
+}
+.footer-mini img{
+    background-color: #1a2224;
+    width: 100%;
+}
+
+.qr img{
+    height: 80px;
+    width: 80px;
+}
+.social img{
+    border: 1px solid #363636;
+    border-radius: 50%;
+}
+.col-2{
+    background-color: #1a2224;
+
+}
+.col-1{
+    background-color: #1a2224;
+
+}
+.col-4{
+    background-color: #1a2224;
+
+}
+.col-3{
+    background-color: #1a2224;
+}
+
+.info{
+    background-color: #1a2224;
+
+}
+
+.info h6{
+    color: white;
+    background-color: #1a2224;
+    font-size:xx-small ;
+
+}
+/* footer-end */
